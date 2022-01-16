@@ -14,7 +14,7 @@ function Register() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("http://localhost:3000/register", values)
+                await axios.post("https://basic-user-login-form-node.herokuapp.com/register", values)
               
                 navigate("/")
             } catch (error) {

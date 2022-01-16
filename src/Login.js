@@ -12,7 +12,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                let loginData = await axios.post("http://localhost:3000/login", values)
+                let loginData = await axios.post("https://basic-user-login-form-node.herokuapp.com/login", values)
                 window.localStorage.setItem("my_token", loginData.data.token)
                 navigate("/user-list")
             } catch (error) {
