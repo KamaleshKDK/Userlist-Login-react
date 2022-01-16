@@ -14,7 +14,7 @@ function Login() {
             try {
                 let loginData = await axios.post("https://basic-user-login-form-node.herokuapp.com/login", values)
                 window.localStorage.setItem("my_token", loginData.data.token)
-                navigate("/user-list")
+                navigate("/create")
             } catch (error) {
                 console.log(error)
             }

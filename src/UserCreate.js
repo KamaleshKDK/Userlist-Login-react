@@ -11,12 +11,13 @@ function UserCreate() {
         initialValues: {
           email: '',
           name : '',
-          age : 0
+          age : 0,
+          phonenumber : ''
         },
         onSubmit: async (values) => {
         try {
            await axios.post("https://basic-user-login-form-node.herokuapp.com/create-user",values)
-            navigate("/user-list")
+            navigate("/thanks")
         } catch (error) {
             console.log(error)
         }
@@ -43,6 +44,12 @@ function UserCreate() {
                     <input type="email" name="email" className='form-control' 
                        onChange={formik.handleChange}
                        value={formik.values.email} required/>
+                </div>
+                <div className="col-lg-6">
+                    <label>Phone Number</label>
+                    <input type="number" name="phonenumber" className='form-control' 
+                       onChange={formik.handleChange}
+                       value={formik.values.phonenumber} required/>
                 </div>
                 <button className='btn btn-primary'>Submit</button>
             </form>

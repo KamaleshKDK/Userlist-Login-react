@@ -10,6 +10,7 @@ import UserCreate from './UserCreate';
 import UserEdit from './UserEdit';
 import Login from './Login';
 import Register from './Register';
+import Thanks from './Thanks';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/user-list" element={<Userlist />} />
           <Route path="/create" element={<UserCreate />} />
           <Route path="/user-edit/:id" element={<UserEdit />} />
+          <Route path="/thanks" element={<Thanks />} />
         </Routes>
 
       </div>
