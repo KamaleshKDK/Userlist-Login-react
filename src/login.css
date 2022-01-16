@@ -1,0 +1,14 @@
+.form-label{
+    font-weight: 600;
+    font-size: 25px;
+}
+.signup-btn {
+    margin-left: 10px;
+    font-size: 20px;
+}
+.signin-btn{
+    font-size: 20px;
+}
+.register-btn{
+    font-size: 20px;
+}
